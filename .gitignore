@@ -6,6 +6,8 @@ __pycache__/
 .Python
 *.egg-info/
 
+# ── Auto-generated data (too large for GitHub) ──
+data/
 # ── Environments & IDEs ───────────────────────────────
 .env
 .venv
