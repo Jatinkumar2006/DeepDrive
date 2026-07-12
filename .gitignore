@@ -15,3 +15,4 @@ venv/
 .vscode/
 .idea/
 *.code-workspace
+!data/dl_scaler.pkl
