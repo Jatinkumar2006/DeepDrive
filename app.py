@@ -446,5 +446,5 @@ if len(models) > 1:
                     'Band': label
                 })
         
-        st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+        st.dataframe(pd.DataFrame(rows), use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
