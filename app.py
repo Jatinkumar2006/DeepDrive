@@ -112,7 +112,7 @@ def _make_transformer_block(tf):
 
 
 @st.cache_resource
-def load_all_models():
+def load_all_models(): # Cache busted
     try:
         import tensorflow as tf
         tf.get_logger().setLevel('ERROR')
