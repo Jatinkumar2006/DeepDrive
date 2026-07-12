@@ -150,7 +150,7 @@ def score_session(csv_path: str, model_name: str):
         print('  ERROR: pip install tensorflow')
         raise SystemExit(1)
 
-    model_path = f'models/{model_name}_model.keras'
+    model_path = f'models/{model_name}_model.h5'
     if not os.path.exists(model_path):
         print(f'  ERROR: {model_path} not found. Run step1_train.py first.')
         raise SystemExit(1)

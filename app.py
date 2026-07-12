@@ -122,7 +122,7 @@ def load_all_models():
     TransformerBlock = _make_transformer_block(tf)
     models = {}
     for name in ['lstm', 'gru', 'transformer']:
-        path = f'models/{name}_model.keras'
+        path = f'models/{name}_model.h5'
         if os.path.exists(path):
             models[name] = tf.keras.models.load_model(
                 path, custom_objects={'TransformerBlock': TransformerBlock})

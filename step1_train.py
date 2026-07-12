@@ -157,7 +157,7 @@ def train_one(tf, name, build_fn, X_tr, y_tr):
         metrics=['accuracy'],
     )
 
-    save_path = f'models/{name}_model.keras'
+    save_path = f'models/{name}_model.h5'
 
     # Configure dynamic callbacks to save the best weights, reduce learning rate on plateaus, and stop early if needed
     callbacks = [

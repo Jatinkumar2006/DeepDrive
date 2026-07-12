@@ -105,7 +105,7 @@ def _make_transformer_block(tf):
 
 
 def load_model(tf, name):
-    path = f'models/{name}_model.keras'
+    path = f'models/{name}_model.h5'
     if not os.path.exists(path):
         raise FileNotFoundError(f'{path} not found. Run step1_train.py first.')
     TransformerBlock = _make_transformer_block(tf)
